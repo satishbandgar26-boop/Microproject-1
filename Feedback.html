@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <title>Feedback page</title>
+    <style>
+      input{
+        border: none;
+        border-bottom: 2px solid black;
+       margin: 20px;
+       padding: 10px;
+       background-color: lightgrey;
+       width: 80%;
+      }
+      h1{
+        text-align: center;
+        background-color: cornflowerblue;
+        padding: 20px;
+      }
+      textarea{
+        resize: none;
+        width: 80%;
+        height: 15%;
+        background-color: lightgrey;
+        margin: 20px;
+        border-radius: 5px;
+      }
+      .feedback{
+        background-color: lightgrey;
+        width:360px;
+        height: 550px;
+        border-radius: 5px;
+        box-shadow:0 0 30px #2d2ece;
+        margin: auto;
+      }
+      form h2{
+        text-align: center;
+        font-family:serif;
+        padding: 20px;
+        
+      }
+      h2:hover{
+        cursor: pointer;
+        text-shadow:2px 1px 10px grey;
+      }
+      button{
+      display:inline-flex;
+      margin-left: 17%;
+      width: 90px;
+      height: 40px;
+      padding: 5px;
+      text-align: center;
+      color: white;
+      border-radius: 10px;
+      background-color: #3f3fcd;
+      }
+      @media (max-width: 600px) and (min-width: 0px) {
+  body {
+    background-color: #ccc;
+  }
+    h1{
+        text-align: center;
+        font-size: 15px;
+      }
+  
+}
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+    <h1>MAHARASHTRA STATE BOARD OF TECHNICAL EDUCATION</h1>
+    </div>
+    <div class="feedback">
+      <form onsubmit="showsms()">
+      <h2>Feedback Form</h2>
+    <input type="text" placeholder="Enter name" required><br>
+    <input type="class" placeholder="Enter class" required><br>
+    <input type="text" placeholder="Enter Exam seat no" required><br>
+    <textarea placeholder="Feedback" required></textarea><br>
+    <div class="button">
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </div>
+    </form>
+        </div>
+  </body>
+  <script>
+    function showsms(){
+      alert('Successfully Submited');
+    }
+  </script>
+</html>
